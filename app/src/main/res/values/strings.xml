@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ultrafficbot</string>
+    <string-array name="arr1">
+        <item>Select Lane</item>
+        <item>Lane1</item>
+        <item>Lane2</item>
+        <item>Lane3</item>
+        <item>Lane4</item>
+    </string-array>
 </resources>

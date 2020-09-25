@@ -7,10 +7,13 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class Manual extends AppCompatActivity {
@@ -31,9 +34,21 @@ public class Manual extends AppCompatActivity {
         Durationtext=findViewById(R.id.durationvalue);
         send=findViewById(R.id.button);
 
+        Spinner lane = (Spinner) findViewById(R.id.lanespinner);
+        ArrayAdapter<String> Adapter1 = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,getResources().getStringArray(R.array.arr1));
+        Adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        lane.setAdapter(Adapter1);
+        lane.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
     }
 
     public void Validate(View v)

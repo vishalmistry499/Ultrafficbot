@@ -7,6 +7,33 @@
     tools:context=".Manual"
     android:background="#ffefd5">
 
+    <TextView
+        android:id="@+id/lane"
+        android:layout_width="88dp"
+        android:layout_height="51dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Lane"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <Spinner
+        android:id="@+id/lanespinner"
+        android:layout_width="187dp"
+        android:layout_height="51dp"
+        android:scrollbarSize="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
     <EditText
         android:id="@+id/greenvalue"
         android:layout_width="88dp"
