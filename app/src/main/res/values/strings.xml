@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">ultrafficbot</string>
+    <string name="welcome_back" />
+    <string name="please_login_to_your_account" />
     <string-array name="arr1">
         <item>Select Lane</item>
         <item>Lane1</item>
